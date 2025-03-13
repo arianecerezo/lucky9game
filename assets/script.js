@@ -20,3 +20,4 @@ const CardValueMap = {
 	'K' : 13,
 	'A' : 1
 }
+
