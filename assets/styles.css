@@ -1,101 +1,60 @@
-*{
-    padding: 0;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    box-sizing: border-box;
 }
-body{
-    background-color: rgba(5, 77, 5, 0.842);
-}
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-flow: column wrap;
-    width: 100%;
-    padding: 20px;
-}
-.title h1{
-    color: rgb(133, 13, 13);
+
+.game-container {
     background-color: white;
-    border: 10px ridge black;
-    font-size: 3rem;
-}
-.container{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 600px;
     text-align: center;
-    align-items: center;
 }
 
-/* Scores Div */
-.scores{
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.473);
-}
-.scores > p {
-    padding: 30px;
-    color: white;
-    font-size: 2rem;
-}
-.wins, .loses, .draws{
-    font-weight: 1000;
-    font-size: 3rem;
-    padding: 20px;
+h1 {
+    color: #333;
 }
 
-/* Game Area */
-.gamearea{
-    height: 600px;
-    width: 100%;
-    min-width: 80%;
+.players-container {
     display: flex;
-    flex-flow: row nowrap;
-}
-.player1area{
-    background-color: rgba(20, 4, 4, 0.664);
-    width: 50%;
-    border-right: 2px solid white;
-}
-.score1, .score2{
-    margin-top: 20px;
-    color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.player2area{
-    background-color: rgba(20, 4, 4, 0.664);
-    width: 50%;
-    border-left: 2px solid white;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-/* Button Area */
-.buttonarea{
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
+.player {
+    width: 45%;
 }
-.hit, .stand, .deal{
-    padding: 10px;
-    width: 100%;
-    margin: 20px;
-    font-family: 'Times New Roman', Times, serif;
+
+.cards {
+    margin-top: 10px;
+    font-size: 1.5rem;
+}
+
+.total {
     font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    margin: 5px;
     cursor: pointer;
 }
-.hit{
-    background-color: blueviolet;
-    color: white;
+
+button:disabled {
+    background-color: #ccc;
 }
-.stand{
-    background-color: red;
-    color: white;
-}
-.deal{
-    background-color: blue;
-    color: white;
+
+.result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 20px;
 }
