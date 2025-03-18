@@ -1,39 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucky 9 Card Game</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
 </head>
+
 <body>
     <div class="game-container">
         <h1>Lucky 9 Card Game</h1>
+        <div id="scoreboard">
+            <div>Player 1 Score: <span id="player1-score">0</span></div>
+            <div>Player 2 Score: <span id="player2-score">0</span></div>
+        </div>
+
+
         <div class="players-container">
+
             <div class="player">
-                <h2>Player 1</h2>
+                <div class="player-info">
+                    <i class="fas fa-user-circle player-icon"></i>
+                    <h2>Player 1</h2>
+
+                </div>
                 <div class="cards" id="player1-cards"></div>
-                <div class="total" id="player1-total"></div>
+                <div class="total" id="player1-total">Total: 0</div>
+
                 <div class="controls">
                     <button id="hit-btn-1">Hit</button>
                     <button id="stand-btn-1">Stand</button>
                 </div>
             </div>
             <div class="player">
-                <h2>Player 2</h2>
+                <div class="player-info">
+                    <i class="fas fa-user-circle player-icon"></i>
+                    <h2>Player 2</h2>
+                </div>
                 <div class="cards" id="player2-cards"></div>
-                <div class="total" id="player2-total"></div>
+                <div class="total" id="player2-total">Total: 0</div>
                 <div class="controls">
                     <button id="hit-btn-2">Hit</button>
                     <button id="stand-btn-2">Stand</button>
                 </div>
             </div>
         </div>
+
         <div class="controls">
+
+            <div id="loading">
+                <img src="assets/images/Z16r.gif" alt="loading card">
+                <p>Shuffling the card...</p>
+            </div>
+
             <button id="start-btn">Start Game</button>
+            <button id="continue-btn">Another Round?</button>
+            <div class="tooltip">
+                <span></span>
+                <div class="icon">i</div>
+                <div class="tooltiptext"><strong>How to play!</strong>
+                    <br>1. Click the start button to draw 2 random cards. 
+                    <br>2. The "total" displays the sum of your cards. The closer it is to 9, the more chances you win. 
+                    <br>3. If you are satisfied, click the stand button to pass the turn to the other player.
+                    <br>4. If you are not satisfied, click hit to draw another card. Take note that only three cards are allowed.
+                </div>
+            </div>
+
         </div>
+
         <div class="result" id="result"></div>
     </div>
     <script src="assets/script.js"></script>
 </body>
+
 </html>
