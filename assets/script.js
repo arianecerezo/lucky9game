@@ -242,7 +242,7 @@ function hit(player) {
         playerCards.push(shuffledDeck.pop());
         displayPlayerCards(player);
     }
-
+// 
     let total = calculateTotal(playerCards);
 
     if (total === 9) {

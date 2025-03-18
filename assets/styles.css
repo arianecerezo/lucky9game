@@ -382,7 +382,7 @@ body {
     transform-style: preserve-3d;
     position: relative;
   }
-  
+  /*  */
   /* Initially face-down */
   .back-card {
     background: url(https://opengameart.org/sites/default/files/card%20back%20blue.png);
