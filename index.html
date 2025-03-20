@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,14 @@
 
 
 </head>
+
 <body>
     <div class="game-container">
         <h1>Lucky 9 Card Game</h1>
-        
-        
+
+
         <div class="players-container">
-            <div class="player">
+            <div class="player" id="player1">
                 <div class="player-info">
                     <div class="score-badge">Score: 0</div> <!-- Score Badge -->
                     <br>
@@ -25,7 +27,7 @@
                     <i class="fas fa-user-circle player-icon"></i>
                     <h2>Player 1</h2>
 
-                    
+
                 </div>
                 <div class="cards" id="player1-cards"></div>
                 <div class="total" id="player1-total">Points: 0</div>
@@ -34,7 +36,7 @@
                     <button id="stand-btn-1">Stand</button>
                 </div>
             </div>
-            <div class="player">
+            <div class="player" id="player2">
                 <div class="player-info">
                     <div class="score-badge">Score: 0</div> <!-- Score Badge -->
                     <br>
@@ -42,29 +44,30 @@
                     <br>
                     <i class="fas fa-user-circle player-icon"></i>
                     <h2>Player 2</h2>
-                    
+
                 </div>
                 <div class="cards" id="player2-cards"></div>
                 <div class="total" id="player2-total">Points: 0</div>
                 <div class="controls">
                     <button id="hit-btn-2">Hit</button>
                     <button id="stand-btn-2">Stand</button>
-                    
+
                 </div>
             </div>
         </div>
-        
-        
+
+
         <div class="controls">
             <div id="loading">Shuffling the deck... 🎴</div>
             <button id="start-btn">Start Game</button>
             <button id="continue-btn" style="display: none;">Continue</button>
-</div>
         </div>
-        <div class="result" id="result"></div>
+    </div>
+    <div class="result" id="result"></div>
     </div>
     <script src="assets/script.js"></script>
 
-    
+
 </body>
+
 </html>
